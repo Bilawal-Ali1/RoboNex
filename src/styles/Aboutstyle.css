@@ -1,0 +1,26 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.abut{
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 140px;
+}
+.space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.frnt {
+    position: relative;  
+    top: 0;
+    height: 500px;
+    background: url('../assets/parallax/frnt.jpg') center/cover no-repeat;
+    margin: 0;
+}
+.col ul{
+    line-height: 110px;
+}

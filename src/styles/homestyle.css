@@ -1,0 +1,175 @@
+/* PAGE CONTENT (navbar fixed offset) */
+.page-content {
+  padding-top: 80px;
+}
+
+/* HERO SECTION */
+.hero_section {
+  min-height: 100vh;
+  background-image: url("../assets/hero/hero-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* navbar ke peeche dikhane ke liye */
+  margin-top: -80px;
+  padding-top: 80px;
+}
+
+/* BURGER IMAGE */
+.hero {
+  margin-top: 80px;  
+  width: 400px;
+}
+
+/* RIGHT TEXT */
+.pr2 {
+  padding-top: 210px;
+  padding-left: 160px;
+  line-height: 30px;
+  font-size: larger;
+  font-weight:500;
+}
+/* BURGER IMAGE FLOAT EFFECT */
+.hero {
+  width: 600px;              /* default width */
+  margin-top: 40px;
+  animation: floatBurger 4s ease-in-out infinite alternate;
+}
+
+.prc {
+  position: absolute;
+  top: 590px;      /* upar kitna */
+  right: 570px;    /* right kitna */
+  z-index: 2;
+}
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .hero {
+    width: 400px; /* smaller screens */
+  }
+}
+@media (max-width: 576px) {
+  .hero {
+    width: 250px;
+  }
+}
+.about{
+  background-image: url(../assets/about/about-1.jpg);
+  text-align: center;
+}
+.about {
+  min-height: 70vh;
+  background-image: url("../assets/about/about-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ padding-top: 80px;
+ margin-bottom: 70px;
+}
+.luck{
+  color:black;
+  text-align: center;
+}
+.mo1{
+  height: 380px;
+  background-image: url("../assets/menu/ads-1.jpg");
+  background-position: center;
+  background-position-x: left;
+  text-align: end;
+  margin-right:20px ;
+  padding-top: 200px;
+
+}
+.mo2{
+   height: 380px;
+  background-image: url(../assets/menu/ads-2.jpg);
+  background-position: center;
+  background-position-x: left;
+   text-align: end;
+  margin-right:20px ;
+  padding-top:200px;
+
+}
+.pro{
+  padding-top: 110px;
+  line-height: 40px;
+}
+.app{
+  background-color: #f0b90b;
+  height: 380px;
+  
+}
+.shop-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;   /* images ke darmiyan space */
+}
+
+.shop-small {
+  width: 220px;
+  height: auto;
+   margin-left: 60px;
+}
+
+.shop-big {
+  margin-left: 250px;
+  width: 400px;
+  margin-top: 10px;
+}
+ /* corosal,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
+ .custom-carousel {
+  max-width: 900px;   /* increased width */
+  height: 500px;      /* increased height */
+  margin: 50px auto;  /* more top & bottom spacing */
+}
+
+.carousel-bg {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  top: 15%; /* move content slightly down */
+  transform: translateY(0);
+  bottom: initial;
+  text-align: center;
+}
+
+/* Top small circular image */
+.author-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* more space below the image */
+}
+
+.author-img {
+  width: 100px;   /* bigger circular image */
+  height: 100px;  /* bigger circular image */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+/* Heading below image */
+.slide-heading {
+  font-size: 28px;  /* slightly bigger heading */
+  margin-bottom: 15px;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+/* Paragraph text */
+.slide-text {
+  font-size: 18px;  /* slightly bigger paragraph */
+  max-width: 650px;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+.Cart {
+  display: flex;
+  flex-wrap: wrap;  /* allows cards to move to next row if needed */
+  gap: 20px;        /* space between cards */
+  justify-content: center; /* center cards in the row */
+}

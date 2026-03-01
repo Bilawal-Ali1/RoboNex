@@ -1,0 +1,31 @@
+.footer1{
+    background-color: yellow;
+    margin-top: 30px;
+ background-image: url(../assets/footer/banner-1.jpg);
+ min-height: 300px;
+ text-align: center;
+ padding-top: 90px;
+ margin-bottom: 4px;
+}
+.footer2{
+    background-color: yellow;
+     min-height: 300px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     line-height: 35px;
+    font-size: large;
+    font-weight: bold;
+}
+.social-icon {
+  font-size: 24px;
+  margin-right: 15px;   /* 👈 icons ke darmiyan space */
+  cursor: pointer;
+}
+
+.social-icon:last-child {
+  margin-right: 0;
+}
+.social-icon:hover{
+     color: red;
+}
