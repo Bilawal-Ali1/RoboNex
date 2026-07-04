@@ -1,0 +1,196 @@
+
+.se3 .card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  background-color: transparent;
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+ 
+.se3 .card .w2,
+.se3 .card .w3 {
+  box-sizing: border-box;
+  border-radius: 30px;
+  border: 1px solid rgb(255, 255, 255);
+  border-bottom: 8px solid rgb(255, 255, 255);
+  padding: 30px;
+  color: white;
+  min-height: 190px;
+  width: min(530px, 90%);
+  background-color: transparent;
+}
+ 
+.se3 .card .w2 {
+  align-self: flex-end;
+}
+ 
+.se3 .card .w3 {
+  align-self: flex-start;
+}
+ 
+.se3 h1 {
+  text-align: center;
+  padding-top: 20px;
+  background-color: transparent;
+}
+ 
+.se3 h2 {
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+ 
+.se3 h6 {
+  margin-top: 20px;
+  line-height: 26px;
+  font-style: italic;
+  background-color: transparent;
+}
+ 
+.se3 .techinfo {
+  border-radius: 20px;
+  border: 1px solid white;
+  border-bottom: 9px solid white;
+  color: white;
+  padding: 30px 40px;
+  margin-top: 150px;
+  background-color: transparent;
+  height: auto;
+  min-height: 400px;
+}
+ 
+.spline-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+ 
+.spline-watermark-cover {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+  height: 60px;
+  background-color: black;
+  z-index: 999;
+}
+ 
+.spline_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  border: none;
+  z-index: 0;
+  pointer-events: none;
+}
+ 
+.hero_section .container {
+  position: relative;
+  z-index: 2;
+}
+ 
+.watermark-blocker {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 50px;
+  background: #000000;
+  pointer-events: none;
+}
+ 
+/* ===== Responsive breakpoints ===== */
+ 
+@media (max-width: 992px) {
+  .se3 .card .w2,
+  .se3 .card .w3 {
+    width: 80%;
+    align-self: center;
+    margin-top: 20px;
+  }
+ 
+  .se3 .techinfo {
+    margin-top: 100px;
+  }
+}
+ 
+@media (max-width: 768px) {
+  .se3 .card .w2,
+  .se3 .card .w3 {
+    width: 95%;
+    align-self: center;
+    padding: 20px;
+  }
+ 
+  .se3 .card .w2 h2,
+  .se3 .card .w3 h2 {
+    font-size: 22px;
+  }
+ 
+  .se3 .card .w2 p,
+  .se3 .card .w3 p,
+  .se3 .card .w2,
+  .se3 .card .w3 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+ 
+  .se3 .techinfo {
+    padding: 20px;
+    margin-top: 80px;
+  }
+ 
+  .se3 h1 {
+    font-size: 28px;
+  }
+}
+ 
+@media (max-width: 480px) {
+  .se3 .card .w2,
+  .se3 .card .w3 {
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    min-height: unset;
+  }
+ 
+  .se3 .card .w2 h2,
+  .se3 .card .w3 h2 {
+    font-size: 18px;
+  }
+ 
+  .se3 h1 {
+    font-size: 22px;
+  }
+ 
+  .se3 h6 {
+    font-size: 13px;
+    line-height: 22px;
+  }
+ 
+  .se3 .techinfo {
+    margin-top: 60px;
+    padding: 15px;
+  }
+}
+/*  
+.spline_bg {
+  position: relative;
+} */
+
+.spline_bg::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 160px;
+  height: 48px;
+  background: #000;  /* apna background color yahan */
+  z-index: 9999;
+  pointer-events: none;
+}

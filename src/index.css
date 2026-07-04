@@ -1,71 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&display=swap');
 
-header .navbar{
-    position:absolution;
-    width:100%;
-    background-color:transparent;
-    z-index:1000;
+* {
+  background-color: black;
 }
-header .navbar.sticky{
-    position:fixed;
-    left:0px;
-    top:0px;
-    background-color:var(--white);
-      -moz-transition:all 15ms ease-in-out;
-     -webbkit-transition:all 15ms ease-in-out;
-     -o-transition:all 15ms ease-in-out;
-     -ms-transition:all 15ms ease-in-out;
-     transition:all 15ms ease-in-out;
-     -webkit-animation-duration:0.5s ;
-
-     animation-duration:0.5s ;
-     animation-name: stickytranstion;
-     animation-fill-mode: both;
-     --webkit-box-shadow:0 2px 3px rgba(96,96,96,0.1);
-     -moz-box-shadow:0 2px 3px  rgba(96,96,96,0.1);
-     box-shadow: 0 2px 3px rgba(96, 96,96,0.1);
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Orbitron", sans-serif;
 }
- /* @Keyframes stickytranstion {
-    0%{
-        opacity:0;
-        -webkit-transform: translate3d(1,-100%,0);
-        transform: translate3d(1,-100%,0);
-    }
-     100%{
-        opacity:1;
-        -webkit-transform:none;
-        transform:none;
-    }
-} */
-    header .log img{
-        width: auto;
-        max-width: inherit;
-        max-height: 80px;
-    }
-    header .nav-link{
-        display: inline-flex;
-        justify-content: center;
-        color: var(--white);
-       padding: 0.1rem;
-       font-size: 1.125rem;
-
-    }
-    header .cart{
-        position: relative;
-        top: -0.4375;
-
-    }
-    header .roundpoint{
-        width: 16px;
-        height: 16px;
-        background: var(--light-red);
-        border-radius: 50px;
-        color:var(--light-black);
-        font-size:11.2px;
-        line-height: 16px;
-        text-align: center;
-        font-style: normal;
-        position: absolute;
-        top: 3.2px;
-        right: -8px;
-    
-    }

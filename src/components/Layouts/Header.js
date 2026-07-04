@@ -1,11 +1,26 @@
-import React, { useEffect, useState } from "react";
-import { Navbar, Nav, Container, Button, Form } from "react-bootstrap";
-import { Link } from "react-router-dom"; // <-- Import Link
-import logo from "../../assets/logo/logo.png";
+import React, { useEffect, useRef, useState } from "react";
+import { Navbar, Container } from "react-bootstrap";  // ✅ ul, li hataye
 import "../../styles/Headerstyle.css";
+import gsap from "gsap";
 
 function Header() {
+  const hd = useRef(null);
   const [scrolled, setScrolled] = useState(false);
+useEffect(() => {
+  const tl = gsap.timeline();
+
+  tl.fromTo(
+   hd.current.querySelectorAll("li"),
+   { Y:100, opacity: 0 },
+    { 
+      x: 0, 
+      opacity: 1, 
+      duration: 0.5, 
+      delay: 1,
+      stagger: 0.2  // ✅ simple stagger
+    }
+  );
+}, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,34 +36,17 @@ function Header() {
       fixed="top"
       className={`custom-navbar ${scrolled ? "scrolled" : ""}`}
     >
-      <Container>
-        {/* LOGO */}
-        <Navbar.Brand as={Link} to="/">
-          <img src={logo} alt="MyLogo" className="logo" />
-        </Navbar.Brand>
+      <Container >
+        <div className="logo"><h1>ROBONEX</h1></div>
 
-        {/* MOBILE TOGGLE */}
-        <Navbar.Toggle aria-controls="main-navbar" />
-
-        {/* COLLAPSE */}
-        <Navbar.Collapse id="main-navbar">
-          <Nav className="mx-auto">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/Menu">Our Menu</Nav.Link>
-            <Nav.Link as={Link} to="/About">About</Nav.Link>  {/* About link added */}
-            <Nav.Link as={Link} to="/Contact">Contact</Nav.Link>
-          </Nav>
-
-          {/* SEARCH */}
-          <Form className="d-flex search-form input">
-            <Form.Control
-              type="search"
-              placeholder="Your Food Here"
-              className="me-2"
-            />
-            <Button variant="outline-warning">Search</Button>
-          </Form>
-        </Navbar.Collapse>
+        <div className="right">
+          <ul ref={hd}>
+            <li><a href="Home">Home</a></li>
+            <li><a href="Technology">Technology</a></li>
+            <li><a href="Project">Projects</a></li>
+            <li><a href="About">About</a></li>
+          </ul>
+        </div>
       </Container>
     </Navbar>
   );

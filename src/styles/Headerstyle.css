@@ -1,43 +1,110 @@
-.custom-navbar {
-  min-height: 70px;
-  padding: 5px 0;
-  transition: all 0.3s ease;
-  z-index: 1000;
-}
-.navbar .nav-link:hover,
-.navbar .nav-link:active
- {
-  color: yellow !important;      /* strong override */
-}
-.custom-navbar.scrolled {
-  background-color: white !important;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+.right {
+  width: 50%;
+  color: white;
+  background: transparent;
 }
 
-/* Logo */
 .logo {
-  height: 100px;
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+  background: transparent;
 }
 
-/* Links */
-.custom-navbar .nav-link {
-  color: white !important;
-  font-weight: 500;
+.right ul {
+  padding-top: 20px;
+  font-size: larger;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  background: transparent;
 }
 
-.custom-navbar.scrolled .nav-link {
-  color: black !important;
+.right ul li {
+  background: transparent;
 }
-.input:focus{
-  border-radius: 0%;
-  box-shadow: none;
+
+.right ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  background: transparent;
 }
-::-webkit-scrollbar{
+
+.right ul li a:hover {
+  color: #00ff88;
+  text-shadow: 0 0 8px #00ff88;
+}
+
+.custom-navbar {
+  border-bottom: 1px solid rgba(0, 255, 136, 0.3);
+  background: transparent;
+}
+
+.custom-navbar.scrolled {
+  background-color: #000000 !important;
+  border-bottom: 2px solid #00ff88;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.25);
+}
+
+::-webkit-scrollbar {
   width: 6px;
 }
-::-webkit-scrollbar-track{
-  background-color: aliceblue;
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
 }
-::-webkit-scrollbar-thumb{
-  background-color:rgb(250, 220, 86);
+
+::-webkit-scrollbar-thumb {
+  background-color: #00ff88;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00ff66;
+}
+
+@media (max-width: 992px) {
+  .right {
+    width: 70%;
+  }
+
+  .right ul {
+    font-size: 16px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .right {
+    width: 100%;
+  }
+
+  .right ul {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 15px;
+  }
+
+  .logo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .right ul {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
 }

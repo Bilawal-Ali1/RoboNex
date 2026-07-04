@@ -1,175 +1,1058 @@
-/* PAGE CONTENT (navbar fixed offset) */
-.page-content {
-  padding-top: 80px;
+
+
+ .hr2 .pr2 h1 {
+  color: white;
+  font-size: 70px;
+  margin-top: 130px;
+  background: transparent;
+  height: auto;
+  padding-top: 40px;
+  line-height: 1.2;
 }
-
-/* HERO SECTION */
-.hero_section {
-  min-height: 100vh;
-  background-image: url("../assets/hero/hero-1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  /* navbar ke peeche dikhane ke liye */
-  margin-top: -80px;
-  padding-top: 80px;
+ 
+.col-lg-6 {
+  background: transparent;
 }
-
-/* BURGER IMAGE */
-.hero {
-  margin-top: 80px;  
+.hr{
+  background-color: transparent;
+}
+.ijp{
+  background-color: transparent;
+}
+.robo-box {
   width: 400px;
-}
-
-/* RIGHT TEXT */
-.pr2 {
-  padding-top: 210px;
-  padding-left: 160px;
-  line-height: 30px;
-  font-size: larger;
-  font-weight:500;
-}
-/* BURGER IMAGE FLOAT EFFECT */
-.hero {
-  width: 600px;              /* default width */
-  margin-top: 40px;
-  animation: floatBurger 4s ease-in-out infinite alternate;
-}
-
-.prc {
-  position: absolute;
-  top: 590px;      /* upar kitna */
-  right: 570px;    /* right kitna */
-  z-index: 2;
-}
-/* RESPONSIVE */
-@media (max-width: 992px) {
-  .hero {
-    width: 400px; /* smaller screens */
-  }
-}
-@media (max-width: 576px) {
-  .hero {
-    width: 250px;
-  }
-}
-.about{
-  background-image: url(../assets/about/about-1.jpg);
-  text-align: center;
-}
-.about {
-  min-height: 70vh;
-  background-image: url("../assets/about/about-1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
- padding-top: 80px;
- margin-bottom: 70px;
-}
-.luck{
-  color:black;
-  text-align: center;
-}
-.mo1{
-  height: 380px;
-  background-image: url("../assets/menu/ads-1.jpg");
-  background-position: center;
-  background-position-x: left;
-  text-align: end;
-  margin-right:20px ;
-  padding-top: 200px;
-
-}
-.mo2{
-   height: 380px;
-  background-image: url(../assets/menu/ads-2.jpg);
-  background-position: center;
-  background-position-x: left;
-   text-align: end;
-  margin-right:20px ;
-  padding-top:200px;
-
-}
-.pro{
-  padding-top: 110px;
-  line-height: 40px;
-}
-.app{
-  background-color: #f0b90b;
-  height: 380px;
-  
-}
-.shop-row {
+  height: 400px;
+  border-radius: 20px;
+  margin-top: 190px;
+  margin-left: 190px;
   display: flex;
   align-items: center;
-  gap: 15px;   /* images ke darmiyan space */
+  justify-content: center;
+  font-size: 100px;
+  box-shadow: 0 0 40px #0044ff88;
+  position: relative;
+  /* ← yeh add karo */
+  z-index: 2;
+  /* ← yeh add karo */
 }
-
-.shop-small {
-  width: 220px;
-  height: auto;
-   margin-left: 60px;
+ 
+.hr2 .pr1 h6 {
+  color: white;
+  font-size: 40px;
+  background: transparent;
+  margin-top: 250px;
+  line-height: 1.4;
 }
-
-.shop-big {
-  margin-left: 250px;
-  width: 400px;
-  margin-top: 10px;
+ 
+/* FIXED (was wrong h6 before) */
+.hr2 .pr3 p {
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+  background: transparent;
+  margin-top: 200px;
+  line-height: 1.4;
+  border: none;
 }
- /* corosal,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
- .custom-carousel {
-  max-width: 900px;   /* increased width */
-  height: 500px;      /* increased height */
-  margin: 50px auto;  /* more top & bottom spacing */
+ 
+.hr2 .pr4 p {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  background: transparent;
+  margin-top: 360px;
+  border: none;
 }
-
-.carousel-bg {
+ 
+spam {
+background-color: transparent;}
+ 
+/* HERO */
+.hero {
+  height: 400px;
+  margin-top: 200px;
+  margin-left: 100px;
+  background: transparent;
+}
+ 
+.se2 {
+  margin-bottom: 200px;
+  z-index: 100;
+  margin-top: 400px;
+  background-color: transparent;
+ 
+}
+ 
+/* BUTTON */
+.se2 button {
+  position: relative;
+  z-index: 101;
+  background: white;
+  color: black;
+  border: none;
+  margin-left: 270px;
+}
+ 
+.se2 button:hover {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  box-shadow: 0 0 20px #00ccff;
+  transform: scale(1.05);
+  background-color: #00ccff;
+}
+ 
+/* MODEL SECTION */
+.model1 {
+  margin-top: 20px;
+  background: transparent;
+}
+ 
+.model1 .text h1 {
+  margin-left: 50px;
+  color: antiquewhite;
+  margin-top: 140px;
+  font-size: 50px;
+}
+ 
+.model1 .text h6 {
+  color: antiquewhite;
+  margin-top: 50px;
+  font-size: 30px;
+}
+ 
+/* HERO SECTION */
+.hero_section {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+ 
+/* SPLINE */
+.spline2-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+ 
+.hy {
+  color: white;
+  background-color: blue;
+  height: 500px;
+}
+ 
+/* watermark */
+.spline2-watermark-cover {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+  height: 60px;
+  background-color: black;
+  z-index: 999;
+}
+ 
+/* background */
+.spline2_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
 }
-
-.carousel-caption {
-  top: 15%; /* move content slightly down */
-  transform: translateY(0);
-  bottom: initial;
-  text-align: center;
+ 
+.hero_section2 .container {
+  position: relative;
+  z-index: 2;
 }
-
-/* Top small circular image */
-.author-wrapper {
+ 
+.slider-main {
+  position: relative;
+  width: 90%;
+  height: 77vh;
+  overflow: hidden;
+  background: #232328;
+  margin-left: 76px;
+}
+ 
+.slider {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+ 
+.item {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  transition: 0.7s;
+}
+ 
+/* MAIN ACTIVE SLIDES */
+.item-0,
+.item-1 {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: none;
+  border-radius: 0;
+}
+ 
+/* SIDE POSITIONS */
+.item-2 {
+  left: 50%;
+}
+ 
+.item-3 {
+  left: calc(50% + 220px);
+}
+ 
+/* CONTENT */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+  color: white;
+  width: 400px;
+}
+ 
+.title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+ 
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+ 
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+ 
+/* NAV */
+.nav {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+ 
+.btn {
+  margin: 0 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+}
+ 
+ 
+.scroll-slider {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+}
+ 
+/* BACKGROUND IMAGE */
+/* SECTION 3 — SCROLL SLIDER */
+.scroll-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+ 
+/* Background image */
+.slide-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease;
+  z-index: 0;
+}
+ 
+/* Dark overlay */
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0.1) 100%);
+  z-index: 1;
+}
+ 
+/* Main text */
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  z-index: 2;
+  max-width: 520px;
+  background-color: transparent;
+}
+ 
+.slide-title {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  background: transparent;
+  margin-bottom: 20px;
+}
+ 
+.slide-desc {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+  line-height: 1.7;
+  background: transparent;
+}
+ 
+/* Bottom-left thumbnail cards */
+.slide-thumbnails {
+  position: absolute;
+  bottom: 70px;
+  left: 800px;
+  display: flex;
+  gap: 14px;
+  z-index: 3;
+  background: transparent;
+}
+ 
+.slide-thumb {
+  width: 120px;
+  height: 160px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: border 0.3s, transform 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+ 
+.slide-thumb.active {
+  border: 2px solid #ffffff;
+  transform: scale(1.08);
+}
+ 
+.slide-thumb-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: flex-end;
+  padding: 6px;
+}
+ 
+.slide-thumb-num {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+ 
+ 
+ 
+ 
+ 
+/* * ==================== SECTION 4 — CARD STACK ==================== */
+.cd {
+  background-color: #000000;
+}
+ 
+.cart {
+  background-color: #000000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0;
+}
+ 
+.cart .card1:nth-child(1) {
+  background-color: #FF6B6B;
+}
+ 
+.cart .card1:nth-child(2) {
+  background-color: #4D96FF;
+}
+ 
+.cart .card1:nth-child(3) {
+  background-color: #FFD93D;
+}
+ 
+.cart .card1:nth-child(4) {
+  background-color: #6BCB77;
+}
+ 
+.cart .card1:nth-child(5) {
+  background-color: #FF9A3C;
+}
+ 
+.cart .card1:nth-child(6) {
+  background-color: #C77DFF;
+}
+ 
+.cart .card1:nth-child(7) {
+  background-color: #E0E0E0;
+}
+ 
+.cart .card1:nth-child(8) {
+  background-color: #ffffff;
+}
+ 
+.cart .card1 {
+  height: 280px;
+  width: 380px;
+  border-radius: 10px;
+  padding: 20px;
+}
+ 
+.cart .card1 h3 {
+  color: black;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+ 
+.cart .card1 p {
+  color: black;
+  margin-top: 15px;
+}
+ 
+ 
+/* c
+c
+c
+c
+c
+c
+c
+c
+cc
+c
+c
+c
+c
+c
+c */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  background: #030303;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+ 
+.home {
+  color: white;
+}
+ 
+/* HERO */
+ 
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 80px;
+  position: relative;
+}
+ 
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: #00ffb3;
+  filter: blur(200px);
+  opacity: .25;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+ 
+.hero-left h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+}
+ 
+.hero-left span {
+  color: #00ffb3;
+}
+ 
+.hero-left p {
+  margin: 20px 0;
+  color: #bdbdbd;
+}
+ 
+button {
+  padding: 15px 35px;
+  border: none;
+  border-radius: 50px;
+  background: #00ffb3;
+  cursor: pointer;
+  font-weight: 700;
+}
+ 
+.hero-center {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px; /* more space below the image */
 }
-
-.author-img {
-  width: 100px;   /* bigger circular image */
-  height: 100px;  /* bigger circular image */
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid white;
+ 
+.hero-robot {
+  width: 550px;
+  z-index: 10;
 }
-
-/* Heading below image */
-.slide-heading {
-  font-size: 28px;  /* slightly bigger heading */
-  margin-bottom: 15px;
-  color: white;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+ 
+.glass-card {
+  background: rgba(255, 255, 255, .05);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  border: 1px solid rgba(0, 255, 179, .3);
+  border-radius: 20px;
 }
-
-/* Paragraph text */
-.slide-text {
-  font-size: 18px;  /* slightly bigger paragraph */
-  max-width: 650px;
-  margin: 0 auto;
-  color: white;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-}
-.Cart {
+ 
+/* STATS */
+ 
+.stats {
   display: flex;
-  flex-wrap: wrap;  /* allows cards to move to next row if needed */
-  gap: 20px;        /* space between cards */
-  justify-content: center; /* center cards in the row */
+  justify-content: center;
+  gap: 100px;
+  padding: 80px;
+}
+ 
+.stats h2 {
+  color: #00ffb3;
+  font-size: 3rem;
+}
+ 
+/* SECURITY */
+ 
+.security-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 100px;
+  gap: 50px;
+}
+ 
+.security-left img {
+  width: 100%;
+}
+ 
+.security-right h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+ 
+.security-right p {
+  color: #bcbcbc;
+  line-height: 1.8;
+}
+ 
+/* SERVICES */
+ 
+.services {
+  padding: 100px;
+  text-align: center;
+}
+ 
+.services h2 {
+  font-size: 4rem;
+  margin-bottom: 60px;
+}
+ 
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+ 
+.service-card {
+  padding: 50px 30px;
+  background: #0b0b0b;
+  border: 1px solid rgba(0, 255, 179, .2);
+  border-radius: 20px;
+  transition: .4s;
+}
+ 
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px #00ffb340;
+}
+ 
+/* FINAL */
+ 
+.final-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 100px;
+}
+ 
+.final-section img {
+  width: 100%;
+}
+ 
+.final-section h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+ 
+/* MOBILE */
+ 
+@media(max-width:992px) {
+ 
+  .hero,
+  .security-section,
+  .final-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+ 
+  .hero-robot {
+    width: 350px;
+  }
+ 
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+ 
+  .stats {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+}
+ 
+ 
+/* sectioon 111111111111111 */
+.red {
+  margin-top: 150px;
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  padding: 100px 0;
+}
+ 
+.red h4 {
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  text-shadow: 0 0 20px rgba(255,255,255,0.3);
+  font-size: 35px;
+  background-color: transparent;
+}
+ 
+.red p {
+  color: rgba(255,255,255,0.75);
+  font-size: 1.1rem;
+  margin-top: 60px;
+  max-width: 600px;
+}
+.red #btn1{
+  margin-top: 25px;
+ border-radius: 30px;
+ width: 200px;
+ height: 40px;
+ padding-top: 7px;
+ color:rgb(0, 0, 0);
+ margin-left: 10px;
+ box-shadow: green;
+ box-shadow:0 0 15px #6BCB77 ;
+ 
+}
+.red #btn1:hover{
+  background-color: black;
+  border: 2px solid rgb(69, 248, 176);
+  color: white;
+}
+.red #btn2{
+  margin-top: 25px;
+ border-radius: 30px;
+ width: 200px;
+ height: 40px;
+ padding-top: 7px;
+ color:rgb(255, 255, 255);
+ margin-left: 10px;
+ box-shadow: green;
+ background-color: #000000;
+border: 2px solid rgb(69, 248, 176);;
+box-shadow:0 0 15px #6BCB77 ;
+}
+.red #btn2:hover{
+  background-color:rgb(69, 248, 176);
+  color: rgb(0, 0, 0);
+ 
+}
+.red h3{
+  color: rgb(255, 0, 0);
+}
+.img {
+  height: 50px;
+  z-index: 2;
+}
+/* section222222222222222222 */
+.red2 {
+  width: 100%;
+  height: 150px;
+  color: green;
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ justify-content: space-between;
+  position: relative;
+  z-index: 999;
+  text-align: center;
+  margin-top: 140px;
+}
+ 
+ 
+/* section4444444444444444444? */
+.main-card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  position: relative;
+  z-index: 10;
+  color: white;
+}
+ 
+.simple-card {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+}
+.simple-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88;
+ 
+}
+.simple-card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+ 
+.simple-card-body {
+  padding: 15px;
+  position: relative;
+  z-index: 1001;
+}
+ 
+.simple-card-body h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+ 
+.simple-card-body p {
+  font-size: 14px;
+  color: #c8c8c8;
+}
+ 
+.pr {
+  position: relative;
+  overflow: hidden;
+}
+ 
+.pr a[href*="spline"],
+.pr a[href*="spline.design"],
+.ijp a[href*="spline"],
+.ijp a[href*="spline.design"] {
+  display: none !important;
+}
+ 
+.pr::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 160px;
+  height: 48px;
+  background: #000;
+  z-index: 9999;
+  pointer-events: none;
+}
+ 
+/* =======================================================
+   ================  RESPONSIVE ADDITIONS  ================
+   Sirf naye media queries add kiye gaye hain.
+   Upar ka koi original rule delete/change nahi kiya gaya.
+   ======================================================= */
+ 
+/* ---------- Tablets / small laptops (<=1200px) ---------- */
+@media (max-width: 1200px) {
+  .hero-robot {
+    width: 420px;
+  }
+ 
+  .slide-thumbnails {
+    left: 40%;
+  }
+ 
+  .hr2 .pr2 h1 {
+    font-size: 55px;
+    margin-top: 90px;
+  }
+}
+ 
+/* ---------- Tablets (<=992px) ---------- */
+@media (max-width: 992px) {
+  /* Section (hero title + spline) */
+  .hr2 .pr2 h1 {
+    font-size: 42px;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+  }
+ 
+  .hr2.hr {
+    display: flex;
+    justify-content: center;
+  }
+   .hr2 .pr2{
+    margin-top: 100px;
+  }
+ 
+  .pr {
+    width: 220px !important;
+    height: 260px !important;
+    margin-left: 0 !important;
+    margin-top: 40px !important;
+    margin-right: auto;
+  }
+ 
+  .hr2 .pr1 h6 {
+    font-size: 24px;
+    margin-top: 60px;
+    text-align: center;
+  }
+ 
+  .hr2 .pr3 p,
+  .hr2 .pr4 p {
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+  }
+ 
+  .robo-box {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    font-size: 60px;
+  }
+ 
+  /* Section3 scroll slider */
+  .slide-title {
+    font-size: 32px;
+  }
+ 
+  .slide-content {
+    left: 5%;
+    max-width: 90%;
+  }
+ 
+  .slide-thumbnails {
+    left: 5%;
+    bottom: 20px;
+  }
+ 
+  .slide-thumb {
+    width: 80px;
+    height: 110px;
+  }
+ 
+  .slider-main {
+    width: 100%;
+    margin-left: 0;
+    height: 60vh;
+  }
+ 
+  /* Section4 cards grid */
+  .main-card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+ 
+  /* stacked cart cards */
+  .cart .card1 {
+    width: 90%;
+    max-width: 380px;
+  }
+ 
+  .se2 button {
+    margin-left: 0;
+    display: block;
+    margin: 0 auto;
+  }
+ 
+  .security-section,
+  .final-section {
+    text-align: center;
+  }
+ 
+  .model1 .text h1,
+  .model1 .text h6 {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+ 
+/* ---------- Mobile (<=768px) ---------- */
+@media (max-width: 768px) {
+  .hr2 .pr2 h1 {
+    font-size: 32px;
+  }
+ 
+  .hr2 .pr1 h6 {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+ 
+  .hr2 .pr3 p,
+  .hr2 .pr4 p {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+ 
+  /* Section1 / Section3 text block */
+  .red {
+    margin-top: 60px;
+    padding: 40px 0;
+    text-align: center;
+  }
+ 
+  .red h4 {
+    font-size: 26px;
+  }
+ 
+  .red p {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+  .red #btn1,
+  .red #btn2 {
+    width: 140px;
+    height: 36px;
+    font-size: 13px;
+    margin-left: 6px;
+  }
+ 
+  .button-group,
+  .btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+ 
+  .simple-card {
+    width: 90%;
+    max-width: 300px;
+  }
+ 
+  .red2 {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 15px;
+    margin-top: 60px;
+  }
+ 
+  .stats {
+    gap: 30px;
+    padding: 30px;
+  }
+ 
+  .hero {
+    padding: 40px 20px;
+  }
+ 
+  .hero-left h1 {
+    font-size: 3rem;
+  }
+}
+ 
+/* ---------- Small mobile (<=576px) ---------- */
+@media (max-width: 576px) {
+  .hr2 .pr2 h1 {
+    font-size: 26px;
+  }
+ 
+  .pr {
+    width: 160px !important;
+    height: 190px !important;
+  }
+ 
+  .hero-robot {
+    width: 260px;
+  }
+ 
+  .hero-left h1 {
+    font-size: 2.2rem;
+  }
+ 
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+ 
+  .simple-card-img {
+    height: 140px;
+  }
+ 
+  .robo-box {
+    width: 220px;
+    height: 220px;
+    font-size: 40px;
+  }
+ 
+  .slide-title {
+    font-size: 24px;
+  }
+ 
+  .slide-desc {
+    font-size: 13px;
+  }
+ 
+  img[alt="Robot"] {
+    height: 260px !important;
+  }
 }

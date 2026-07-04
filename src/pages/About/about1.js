@@ -1,62 +1,77 @@
-import React from "react";
-import { Container, Row, Col} from "react-bootstrap";
-import time from "../../assets/about/delivery-bike.png";
-import time1 from "../../assets/about/pizza.png";
-import time2 from "../../assets/about/salad.png";
+import React, { useEffect, useRef } from "react";
+import { Container } from "react-bootstrap";
 import "../../styles/Aboutstyle.css";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function About1() {  
+gsap.registerPlugin(ScrollTrigger);
+
+function About1() {
+  const abRef = useRef(null);
+
+  useEffect(() => {
+    const items = abRef.current.children;
+
+    gsap.fromTo(
+      items,
+      {
+        opacity: 0,
+        x: -100,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        stagger: 0.3, // 👈 step by step
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: abRef.current,
+          start: "top 80%",
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
+
+    return () => {
+      ScrollTrigger.getAll().forEach((t) => t.kill());
+    };
+  }, []);
+
   return (
-       <section>
-         <Container className="abut">
-         <h2 className="space"><span style={{color:"red"}}>ABOUT  </span> <br/> 
-         DELIVERY <br/> <br/>
-         </h2>
-                  <Row>
-        <Col><img src={time}  alt="pic"/> 
-        </Col>
-        <Col><ul>
-           <li> <h5>“At Mr. Burger, we bring your favorite burgers hot, fresh, and fast—right to your door!”  </h5></li>
-           <li> <h5>“Delivering happiness one burger at a time. Quick, tasty, and made with love!” </h5></li>
-           <li><h5>“Mr. Burger is all about fresh ingredients, mouth-watering flavors, and delivering smiles to your doorstep.” </h5></li>
-           <li><h5>“Your burger cravings, our priority. Fast, reliable, and oh-so-delicious delivery!” </h5></li>
-           
-         </ul>
-         </Col>
-      </Row>
-      <Row>
-      <h2 className="space"><span style={{color:"red"}}>ABOUT  </span> <br/> 
-         FOOD <br/> <br/>
-         </h2>
-        <Col><ul>
-           <li> <h5>“At Mr. Burger, we bring your favorite burgers hot, fresh, and fast—right to your door!”  </h5></li>
-           <li> <h5>“Delivering happiness one burger at a time. Quick, tasty, and made with love!” </h5></li>
-           <li><h5>“Mr. Burger is all about fresh ingredients, mouth-watering flavors, and delivering smiles to your doorstep.” </h5></li>
-           <li><h5>“Your burger cravings, our priority. Fast, reliable, and oh-so-delicious delivery!” </h5></li>
-           
-         </ul>
-         </Col>
-         <Col><img src={time1}/> 
-        </Col>
-      </Row>
-      <Row>
-      <h2 className="space"><span style={{color:"red"}}>ABOUT  </span> <br/> 
-         HEALTH <br/> <br/>
-         </h2>
-        <Col><img src={time2} /> 
-        </Col>
-        <Col>
-         <ul>
-           <li> <h5>“At Mr. Burger, we never compromise on your health — only fresh and safe ingredients make it to your plate.” </h5></li>
-           <li> <h5>“Your health matters! That’s why we serve food made with care, quality, and hygiene.” </h5></li>
-           <li><h5>“We believe tasty food shouldn’t come at the cost of health — enjoy every bite safely.” </h5></li>
-           <li><h5>“Healthy, fresh, and delicious — that’s our promise with every meal we serve.”</h5></li>
-           
-         </ul>
-         </Col>
-      </Row>
-         </Container>
-            </section>
-);
+    <Container>
+      <div className="ab1" ref={abRef}>
+        <h1>
+          Building the Future of <br /> Human Intelligence
+        </h1>
+
+        <h6>
+          RoboNex is a next-generation robotics vision focused on advanced
+          humanoid systems, AI integration
+          <br />
+          and futuristic automation designed for the world beyond tomorrow.
+        </h6>
+
+        <h1>About RoboNex</h1>
+
+        <h6>
+          RoboNex is a futuristic robotics concept focused on the evolution of
+          humanoid intelligence and AI-driven systems.
+          <br />
+          <br />
+          Our goal is to imagine and design how humans and machines will
+          interact in the coming decades.
+          <br />
+          <br />
+          We explore advanced humanoid robotics, neural intelligence systems,
+          and automation technologies that may shape industries like healthcare,
+          space exploration, education, and everyday human life.
+          <br />
+          <br />
+          RoboNex is not just a project — it is a vision of the future.
+        </h6>
+      </div>
+    </Container>
+  );
 }
-export default About1;  
+
+export default About1;
