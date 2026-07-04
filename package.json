@@ -2,6 +2,7 @@
   "name": "first-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bilawal-ali1.github.io/RoboNex",
   "dependencies": {
     "@splinetool/react-spline": "^4.1.0",
     "@testing-library/dom": "^10.4.1",
@@ -19,6 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build --dotfiles",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -35,17 +38,13 @@
       ">0.2%",
       "not dead",
       "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
     ]
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
     "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.37.5",
+    "gh-pages": "^6.3.0",
     "globals": "^17.3.0"
   }
 }
