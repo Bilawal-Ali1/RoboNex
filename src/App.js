@@ -19,7 +19,7 @@ function App() {
         <Route path="/Technology" element={<Technology/>} />
         <Route path="/About" element={<About />} />
         <Route path="/Project" element={<Project/>} />
-        <Route path="/RoboNex" element={<Home/>} />  {/* ab yahan Home aayega */}
+        <Route path="/RoboNex" element={<Home/>} />  
       </Routes>
       <Footer />  
     </Router>
