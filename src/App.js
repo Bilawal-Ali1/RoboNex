@@ -14,11 +14,12 @@ function App() {
       <ScrollToTop />
       <Header />  
       <Routes>
-        <Route path="/" element={<Home/>} />        {/* ✅ yeh add kiya */}
+        <Route path="/" element={<Home/>} />      
         <Route path="/Home" element={<Home/>} />
         <Route path="/Technology" element={<Technology/>} />
         <Route path="/About" element={<About />} />
         <Route path="/Project" element={<Project/>} />
+        <Route path="/RoboNex" element={<Home/>} />  {/* ab yahan Home aayega */}
       </Routes>
       <Footer />  
     </Router>
