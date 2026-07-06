@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/homestyle.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 function Section2() {
   return (
     <Container>

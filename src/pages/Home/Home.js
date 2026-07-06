@@ -1,12 +1,12 @@
 import React from 'react';
-import Layout from '../../components/Layouts/Layout'; // ✅ properly closed
+// import Layout from '../../components/Layouts/Layout'; 
 import Section from './Section';
 import Section1 from './Section1';
 import Section2 from './Section2';
 import Section3 from './Section3';
 import Section4 from './Section4';
 import "../../styles/homestyle.css";
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 
 function Home() {
   return (

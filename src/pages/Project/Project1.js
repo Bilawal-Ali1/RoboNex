@@ -3,7 +3,7 @@ import img1 from "../../assets/about/1.jpg";
 import img2 from "../../assets/about/2.jpg";
 import img3 from "../../assets/about/3.jpg";
 import img4 from "../../assets/about/4.jpg";
-import img5 from "../../assets/about/5.jpg";
+// import img5 from "../../assets/about/5.jpg";
 import img6 from "../../assets/about/6.jpg";
 import img7 from "../../assets/about/7.jpg";
 import img8 from "../../assets/about/8.jpg";
@@ -12,7 +12,7 @@ import "../../styles/Projectstyle.css";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 
 gsap.registerPlugin(ScrollTrigger);
 

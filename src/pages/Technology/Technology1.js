@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../../styles/Technologystyle.css";
 import { Container, Row, Col } from "react-bootstrap";
-import Spline from "@splinetool/react-spline";
 import gsap from "gsap";
 
 function Technology1() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
   const tch = useRef(null);
 
   useEffect(() => {
