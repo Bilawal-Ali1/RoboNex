@@ -2,7 +2,6 @@
   "name": "first-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bilawal-ali1.github.io/RoboNex",
 
   "dependencies": {
     "@splinetool/react-spline": "^4.1.0",
